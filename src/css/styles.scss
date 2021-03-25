@@ -1,11 +1,11 @@
-// $font-size: 1rem;
-// $font-color: lch(53 105 40);
+$font-size: 1rem;
+$font-color: blue;
 
-// html {
-//   font-size: $font-size;
-//   color: $font-color;
-// }
+html {
+  font-size: $font-size;
+  color: $font-color;
+}
 
 body {
-    color: red;
+    background-image: url('../images/example.png');
 }
