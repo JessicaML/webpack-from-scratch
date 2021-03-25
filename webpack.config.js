@@ -2,6 +2,7 @@
 
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 // This is the main configuration object.
 // Here, you write different options and tell Webpack what to do
@@ -65,5 +66,6 @@ module.exports = {
       template: path.resolve(__dirname, './src/template.html'), // template file
       filename: 'index.html', // output file
     }),
+    new CleanWebpackPlugin(),
   ],
 };
